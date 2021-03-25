@@ -1,8 +1,8 @@
 <?php
 /**
- * 三八二十四计算器
+ * 二十四点计算器
  */
-$target = [1,3,9,10];
+$target = [6,9,9,10];
 $ysf = ["+","-","*","/"];
 $box=[];
 foreach ($target as $key=>$val){
@@ -59,6 +59,7 @@ foreach ($box as $data){
             $code = "return $code;";
             $res = @eval($code);
             if($res == 24){
+                $code = str_replace("return ","",$code);
                 echo $code.PHP_EOL;
             }
         }
