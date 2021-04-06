@@ -1,0 +1,4 @@
+Elasticsearch常用增删改查封装
+该类库依赖于php elasticsearch客户端,需要在escurd\model\ESClient类手动加载该依赖
+然后加载该类库的自动加载器autoload.php
+然后就可以在model目录中建立与索引对应的模型,用类似thinkphp的语法操作
